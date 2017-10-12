@@ -1,0 +1,23 @@
+<h1>Vehiculos en la base de datos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width: 200px;">Marca</th>
+            <th style="width: 200px;">Modelo</th>
+            <th style="width: 200px;">Año</th>
+            <th style="width: 200px;">Color</th>
+            <th style="width: 200px;">Placa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @cars.each do |car| %>
+            <tr>
+                <td><%= car.marca %></td>
+                <td><%= car.modelo %></td>
+                <td><%= car.año %></td>
+                <td><%= car.color %></td>
+                <td><%= car.placa %></td>
+            </tr>
+        <%end%>
+    </tbody>
+</table>

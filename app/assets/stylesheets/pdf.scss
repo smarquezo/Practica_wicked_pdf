@@ -1,0 +1,21 @@
+tr{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: black;
+}
+h1{
+    text-align: center;
+}
+td,th{
+    text-align: left;
+}
+th{
+    background-color: #000;
+    color: white;
+}
+table, tr, td, th, tbody, thead, tfoot{
+    page-break-inside: avoid !important;
+}
+div.alwaysbreak { page-break-before: always; }
+div.nobreak:before { clear:both; }
+div.nobreak { page-break-inside: avoid; }
